@@ -23,12 +23,15 @@ We will be to:
  In the world of business today, it is all about competitiveness, creating and maintaining your brand and most importantly providing top-notch customer services. While this has been demonstrated by well-known companies around the world, every airline is up to task to delivery exceptional services to both local and international passengers. Currently, every airline hopes to go above and beyond passenger expectations, grow its brand worldwide and have as many destinations as possible.
   ![Boeing_787](Riyadh_Air_Boeing_787_at_Dubai_Airshow_2023.jpg) 
 
- We are going to look at factors that determine passenger satisfaction or dissatisfaction.
+ We are going to look at factors that determine passenger satisfaction or dissatisfaction. 
 
 
  # Data Understanding
  
 This dataset was first modified by John D [here](https://www.kaggle.com/datasets/johndddddd/customer-satisfaction) and later modified by TJ KLEIN [here](https://www.kaggle.com/datasets/teejmahal20/airline-passenger-satisfaction/data)
+
+### Data Visualization
+Finally, we will plot graphs for a better understanding and draw insights. Check [My_tableau](https://public.tableau.com/authoring/120224DM/Dashboard1#1) for more visualizations.
 
 ## Getting into the Data
 
@@ -116,6 +119,8 @@ df['Arrival Delay in Minutes'] = df['Arrival Delay in Minutes'].fillna(df['Arriv
 ``` # get the correlation
 df.corr()
 ```
+![correlation_matrix](images\correlation_matrix.png)
+
 
 From the above table we can find that Departure Delay in Minutes is highly correlated with satisafaction.
 We can draw a quick insight that it is one of the major causes of dissatisfaction.
